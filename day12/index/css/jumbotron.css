@@ -1,0 +1,58 @@
+.jumbotron {
+  display: flex;
+
+  width: 100vw;
+  height: 70vh;
+
+  background-image: url("../../index/img/coffee.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  opacity: 0.6;
+}
+
+.jumbotron__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.jumbotron__conents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  color: white;
+
+  font-family: "Pretendard-Regular";
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  font-size: 30px;
+  padding-top: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron__container {
+    max-width: 400px;
+  }
+  .jumbotron__conents > h1 {
+    font-size: 40px;
+  }
+  .sub {
+    font-size: 16px;
+  }
+}
